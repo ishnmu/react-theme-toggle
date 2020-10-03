@@ -13,9 +13,23 @@ function App() {
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <>
         <GlobalStyles />
-        <Toggle onClick={toggleTheme} />
-        <h1>Its a {theme} theme</h1>
-        <footer></footer>
+        <Toggle onClick={toggleTheme} theme={theme} />
+        <h1>{theme.toUpperCase()}</h1>
+        <footer>
+          <small>
+            <b>Credits</b>
+          </small>
+          <div>
+            Icons made by{" "}
+            <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+              Freepik
+            </a>{" "}
+            from{" "}
+            <a href="https://www.flaticon.com/" title="Flaticon">
+              www.flaticon.local
+            </a>
+          </div>
+        </footer>
       </>
     </ThemeProvider>
   );
