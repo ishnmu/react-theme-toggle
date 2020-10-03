@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/react-theme-toggle/static/js/main.31e3ba68.chunk.js",
-    "main.js.map": "/react-theme-toggle/static/js/main.31e3ba68.chunk.js.map",
+    "main.js": "/react-theme-toggle/static/js/main.f37e1095.chunk.js",
+    "main.js.map": "/react-theme-toggle/static/js/main.f37e1095.chunk.js.map",
     "runtime-main.js": "/react-theme-toggle/static/js/runtime-main.976e83b2.js",
     "runtime-main.js.map": "/react-theme-toggle/static/js/runtime-main.976e83b2.js.map",
     "static/js/2.9a4b7c8d.chunk.js": "/react-theme-toggle/static/js/2.9a4b7c8d.chunk.js",
     "static/js/2.9a4b7c8d.chunk.js.map": "/react-theme-toggle/static/js/2.9a4b7c8d.chunk.js.map",
     "index.html": "/react-theme-toggle/index.html",
-    "precache-manifest.cd82c940adec097285de65847e0e8981.js": "/react-theme-toggle/precache-manifest.cd82c940adec097285de65847e0e8981.js",
+    "precache-manifest.bfef6c3409237925e08aef2fa2237a1d.js": "/react-theme-toggle/precache-manifest.bfef6c3409237925e08aef2fa2237a1d.js",
     "service-worker.js": "/react-theme-toggle/service-worker.js",
     "static/js/2.9a4b7c8d.chunk.js.LICENSE.txt": "/react-theme-toggle/static/js/2.9a4b7c8d.chunk.js.LICENSE.txt",
     "static/media/night.0aa8989c.svg": "/react-theme-toggle/static/media/night.0aa8989c.svg",
@@ -16,6 +16,6 @@
   "entrypoints": [
     "static/js/runtime-main.976e83b2.js",
     "static/js/2.9a4b7c8d.chunk.js",
-    "static/js/main.31e3ba68.chunk.js"
+    "static/js/main.f37e1095.chunk.js"
   ]
 }
