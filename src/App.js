@@ -26,7 +26,23 @@ function App() {
             </a>{" "}
             from{" "}
             <a href="https://www.flaticon.com/" title="Flaticon">
-              www.flaticon.local
+              www.flaticon.com
+            </a>
+          </div>
+          <div>
+            {`Inspired by `}
+            <a
+              href="https://css-tricks.com/a-dark-mode-toggle-with-react-and-themeprovider/"
+              title="css-tricks-article"
+            >
+              css-tricks article
+            </a>
+            {` from `}
+            <a
+              href="https://css-tricks.com/author/maksakymenko/"
+              title="Maks Akymenko"
+            >
+              Maks Akymenko
             </a>
           </div>
         </footer>
