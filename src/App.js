@@ -4,17 +4,37 @@ import { darkTheme, lightTheme } from "./theme";
 import { GlobalStyles } from "./global";
 import Toggle from "./Toggle/Toggle";
 
-function App() {
-  const [theme, setTheme] = useState("light");
+const detectTheme = () => {
+  const persistedTheme = localStorage.getItem("theme");
+  if (persistedTheme) {
+    return persistedTheme;
+  }
+  localStorage.setItem("theme", "light");
+  return "light";
+};
 
-  const toggleTheme = () =>
-    theme === "light" ? setTheme("dark") : setTheme("light");
+function App() {
+  const [theme, setTheme] = useState(detectTheme);
+  console.info("::theme", theme);
+
+  const setDark = () => {
+    localStorage.setItem("theme", "dark");
+    setTheme("dark");
+  };
+
+  const setLight = () => {
+    localStorage.setItem("theme", "light");
+    setTheme("light");
+  };
+
+  const toggleTheme = () => (theme === "light" ? setDark() : setLight());
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <>
         <GlobalStyles />
         <Toggle onClick={toggleTheme} theme={theme} />
         <h1>{theme.toUpperCase()}</h1>
+
         <footer>
           <small>
             <b>Credits</b>
